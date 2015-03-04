@@ -1,24 +1,24 @@
 {
   "name": "DesignSelector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "Team Trogdor",
   "license": "ISC",
   "dependencies": {
     "envify": "^1.2.1",
-    "es6-promise": "^1.0.0",
-    "gulp": "^3.8.0",
-    "gulp-browserify": "^0.5.0",
-    "gulp-concat": "^2.2.0",
-    "react": "^0.10.0",
-    "react-async": "^0.9.4",
-    "react-router-component": "^0.19.0",
-    "reactify": "^0.13.1"
+    "es6-promise": "^2.0.1",
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.5.2",
+    "react": "^0.12.2",
+    "react-async": "^2.0.1",
+    "react-router-component": "^0.24.1",
+    "reactify": "^1.0.0"
   },
   "devDependencies": {
-    "gulp-build": "^0.5.3",
-    "gulp-file-include": "^0.7.1",
-    "gulp-sass": "^1.2.4"
+    "gulp-build": "*",
+    "gulp-file-include": "*",
+    "gulp-sass": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

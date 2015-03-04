@@ -1,7 +1,4 @@
 .sass-cache
-
-node_modules
-
 dist
-
 dist-html
+node_modules
