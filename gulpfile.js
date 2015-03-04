@@ -21,11 +21,6 @@ gulp.task('copy-assets', function() {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('copy-html', function() {
-  gulp.src('html/*.html')
-    .pipe(gulp.dest('dist-html'));
-});
-
 gulp.task('sass', function () {
   gulp.src('src/scss/**/*.scss')
     .pipe(sass())
@@ -42,7 +37,6 @@ gulp.task('fileinclude', function() {
     .pipe(gulp.dest('dist-html'));
 });
 
-gulp.task('html', ['copy-html']);
 gulp.task('default',['browserify', 'copy-markup', 'copy-assets', 'sass', 'fileinclude']);
 gulp.task('watch', function() {
     gulp.watch(['src/**/*.*', 'html/**/*.*'], ['default']);
