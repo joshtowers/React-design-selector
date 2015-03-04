@@ -5,20 +5,21 @@
   "author": "Team Trogdor",
   "license": "ISC",
   "dependencies": {
+    "flux": "^2.0.1",
+    "keymirror": "~0.1.0",
+    "object-assign": "^1.0.0",
+    "react": "^0.12.0",
     "envify": "^1.2.1",
-    "es6-promise": "^2.0.1",
-    "gulp": "^3.8.11",
-    "gulp-browserify": "^0.5.1",
-    "gulp-concat": "^2.5.2",
-    "react": "^0.12.2",
-    "react-async": "^2.0.1",
-    "react-router-component": "^0.24.1",
-    "reactify": "^1.0.0"
+    "react-router-component": "^0.24.1"
   },
   "devDependencies": {
+    "gulp": "*",
+    "gulp-browserify": "*",
     "gulp-build": "*",
+    "gulp-concat": "*",
     "gulp-file-include": "*",
-    "gulp-sass": "*"
+    "gulp-sass": "*",
+    "reactify": "^1.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
