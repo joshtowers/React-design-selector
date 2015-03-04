@@ -2,7 +2,7 @@
 var React = require('react');
 var AppStore = require('../../stores/app-store.js');
 var StoreWatchMixin = require('../../mixins/StoreWatchMixin.js');
-var layoutItems = require('../layout/app-layoutitems.js');
+var LayoutItems = require('../layout/app-layoutitems.js');
 
 
 function getDesigns() {
@@ -28,7 +28,7 @@ var Layout =
           <div className="row container select-layout-options-wrapper">
             <div className="col-xs-8">
               <div className="row">
-                <layoutItems layout={getLayouts()} design={selectedDesign} />
+                <LayoutItems layout={getLayouts()} design={selectedDesign} />
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react');
-var layoutItem = require('../layout/app-layoutitem.js');
+var LayoutItem = require('../layout/app-layoutitem.js');
 var AppStore = require('../../stores/app-store.js');
 
 var layoutItems =
@@ -13,7 +13,7 @@ var layoutItems =
 				}
 				return (
 					<li className={style + ' col-xs-8 col-md-2'}>
-						<layoutItem layoutName={name} designName={this.props.design} />
+						<LayoutItem layoutName={name} designName={this.props.design} />
 					</li>
 				)
 			}, this)
