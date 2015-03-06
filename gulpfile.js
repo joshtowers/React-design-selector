@@ -41,5 +41,5 @@ gulp.task('fileinclude', function() {
 
 gulp.task('default', ['browserify', 'copy-markup', 'copy-assets', 'sass', 'fileinclude']);
 gulp.task('watch', function() {
-	gulp.watch(['src/**/*.*', 'html/**/*.*'], ['default']);
+	gulp.watch(['src/**/*.*'], ['default']);
 });
