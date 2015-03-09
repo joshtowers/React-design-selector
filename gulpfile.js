@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var shell = require('gulp-shell');
 var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
@@ -38,6 +39,22 @@ gulp.task('fileinclude', function() {
 		}))
 		.pipe(gulp.dest('dist-html'));
 });
+
+gulp.task('test', function() {
+  return gulp.src('*.js', {read: false})
+  .pipe(shell([
+    'jest'
+  ]));
+});
+
+// gulp.task('connect', connect.server({
+//     root: ['app'],
+//     port: 9002,
+//     livereload: true,
+//     open:{
+//     browser:  'Google Chrome' //'chrome'
+//   }
+// }));
 
 gulp.task('default', ['browserify', 'copy-markup', 'copy-assets', 'sass', 'fileinclude']);
 gulp.task('watch', function() {
